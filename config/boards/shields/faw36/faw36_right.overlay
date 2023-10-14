@@ -9,10 +9,20 @@
 
 &kscan0 {
     col-gpios
-        = <&xiao_d 8 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+        = <&xiao_d 2 GPIO_ACTIVE_HIGH>
         , <&xiao_d 3 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 2 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&spi2 {
+  status = "okay";
+  sck-pin = <&xiao_d 8>;
+  mosi-pin = <&xiao_d 10>;
+  miso-pin = <&xiao_d 10>; // same as mosi (3-wire spi)
+  cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
+};
+
+&trackball {
+  status = "okay";
+  irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
