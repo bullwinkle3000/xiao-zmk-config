@@ -14,11 +14,28 @@
         ;
 };
 
+spi2_default: spi2_default {
+    group1 {
+        psels = <NRF_PSEL(SPIM_MOSI, 1, 15)>,
+            <NRF_PSEL(SPIM_MOSI, 1, 15)>,
+            <NRF_PSEL(SPIM_MISO, 1, 14)>;
+    };
+};
+
+spi2_sleep: spi2_sleep {
+    group1 {
+        psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
+            <NRF_PSEL(SPIM_MOSI, 1, 15)>,
+            <NRF_PSEL(SPIM_MISO, 1, 14)>;
+        low-power-enable;
+    };
+};
+
 &spi2 {
   status = "okay";
-  sck-pin = <8>;
-  mosi-pin = <10>;
-  miso-pin = <10>; // same as mosi (3-wire spi)
+  sck-pin = <NRF_PSEL(SPIM_MOSI, 1, 13)>,
+  mosi-pin = <NRF_PSEL(SPIM_MOSI, 1, 15)>,
+  miso-pin = <NRF_PSEL(SPIM_MOSI, 1, 15)>, // same as mosi (3-wire spi)
   cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
 };
 
