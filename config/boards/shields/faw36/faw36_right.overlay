@@ -16,9 +16,9 @@
 
 &spi2 {
   status = "okay";
-  sck-pin = <&xiao_d 8>;
-  mosi-pin = <&xiao_d 10>;
-  miso-pin = <&xiao_d 10>; // same as mosi (3-wire spi)
+  sck-pin = <8>;
+  mosi-pin = <10>;
+  miso-pin = <10>; // same as mosi (3-wire spi)
   cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
 };
 
