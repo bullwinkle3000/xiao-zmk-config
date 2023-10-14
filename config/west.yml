@@ -1,5 +1,7 @@
 manifest:
   remotes:
+    - name: germain-gadel
+      url-base: https://github.com/germain-gadel
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
