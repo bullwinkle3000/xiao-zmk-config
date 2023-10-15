@@ -16,12 +16,12 @@
 &spi2 {
   status = "okay";
   sck-pin = <8>;
-  mosi-pin = <10>;
-  miso-pin = <10>; // same as mosi (3-wire spi)
+  mosi-pin = <4>;
+  miso-pin = <4>; // same as mosi (3-wire spi)
   cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
 };
 
 &trackball {
   status = "okay";
-  irq-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+  irq-gpios = <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
