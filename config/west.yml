@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: zmkfirmware
+    - name: zmk
       url-base: https://github.com/drorchen
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: zmk
       revision: dracula-test
       import: app/west.yml
   self:
