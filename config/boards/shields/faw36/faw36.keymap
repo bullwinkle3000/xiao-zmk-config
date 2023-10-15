@@ -40,7 +40,6 @@
     &kp Q       &kp W       &kp E       &kp R       
     &lt NAV A   &kp S       &kp D       &kp F      
                 >;
-            trackball-bindings = <&tmv_coarse>;
         };
         num_layer {
 /* Numbers
