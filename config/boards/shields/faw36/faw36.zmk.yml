@@ -6,7 +6,7 @@ url: https://github.com/germain-gadel
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-  - encoder
+  - pointer
 siblings:
   - faw36_left
   - faw36_right

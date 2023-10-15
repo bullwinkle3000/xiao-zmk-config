@@ -3,7 +3,7 @@ manifest:
     - name: germain-gadel
       url-base: https://github.com/germain-gadel
     - name: zmkfirmware
-      url-base: https://github.com/victorlucachi
+      url-base: https://github.com/bullwinkle3000
   projects:
     - name: zmk
       remote: zmkfirmware
