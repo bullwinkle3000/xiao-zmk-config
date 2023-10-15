@@ -3,7 +3,7 @@
 #include "faw36.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &default_transform {
-	col-offset = <5>;
+	col-offset = <2>;
 };
 
 &kscan0 {
@@ -13,13 +13,13 @@
         ;
 };
 
-&spi2 {
-  status = "okay";
-  sck-pin = <8>;
-  mosi-pin = <4>;
-  miso-pin = <4>; // same as mosi (3-wire spi)
-  cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
-};
+// &spi2 {
+//  status = "okay";
+//  sck-pin = <8>;
+//  mosi-pin = <4>;
+//  miso-pin = <4>; // same as mosi (3-wire spi)
+//  cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
+//};
 
 &trackball {
   status = "okay";
