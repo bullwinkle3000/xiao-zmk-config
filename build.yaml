@@ -13,6 +13,7 @@
 #
 #board: [ "seeeduino_xiao_ble" ]
 #shield: [ "faw36_left", "faw36_right" ]
+# testing trigger
 include:
   - board: seeeduino_xiao_ble
     shield: faw36_left
