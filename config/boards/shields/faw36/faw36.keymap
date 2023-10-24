@@ -40,7 +40,6 @@
     &kp Q       &kp W       &kp E       &kp R       
     &lt NAV A   &kp S       &kp D       &kp F      
                 >;
-            trackball-bindings = <&tmv_coarse>;
         };
         num_layer {
 /* Numbers
@@ -58,7 +57,6 @@
     &kp N0 &kp N7 &kp N8  &kp N9 
     &trans &kp N4 &kp N5  &kp N6 
                 >;
-                trackball-bindings = <&tmv_coarse>;
         };
         sym_layer {
 /* Symbols
@@ -76,7 +74,6 @@
     &kp GRAVE  &trans   &kp UNDER &kp PLUS  
     &kp LBRC   &kp RBRC &kp MINUS &kp EQUAL 
                 >;
-                trackball-bindings = <&tmv_coarse>;
         };
         arrows_layer {
 /* Arrows
@@ -94,7 +91,6 @@
     &trans &trans &trans &trans 
     &trans &trans &trans &trans 
                 >;
-                trackball-bindings = <&tmv_coarse>;
         };
         media_layer {
 /* Media
@@ -112,7 +108,6 @@
     &trans &trans &trans &trans 
     &trans &trans &trans &trans 
                 >;
-                trackball-bindings = <&tmv_coarse>;
         };
         nav_layer {
 /* Navigation
@@ -130,7 +125,6 @@
     &bt BT_CLR &bootloader &kp PG_UP &kp PG_DN 
     &trans     &trans      &kp HOME  &kp END   
                 >;
-                trackball-bindings = <&tmv_coarse>;
         };
     };
 };
