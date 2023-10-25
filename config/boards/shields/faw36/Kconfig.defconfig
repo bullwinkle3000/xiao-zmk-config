@@ -16,12 +16,13 @@ if SHIELD_FAW36_LEFT || SHIELD_FAW36_RIGHT
 config ZMK_SPLIT
 	default y
 
-endif
-
 config I2C
 	default y
 
 config GPIO_MCP23017
 	default y
+
+endif
+
 
 
